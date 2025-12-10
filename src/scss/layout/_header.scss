@@ -2,63 +2,60 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   background-color: white;
   z-index: 100;
   display: flex;
   flex-direction: column;
-  align-items: center; /* centra horizontalmente */
-  padding: 0.5rem 0;
-  margin: 0;
+  align-items: center;
   gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
 }
 
 .header__logo img {
-  max-width: 1500px; /* tamaño base para mobile */
-  width: 70%;
+  width: 120px;
   display: block;
-  margin: 0 auto;
 }
 
 .nav__list {
   display: flex;
-  justify-content: center; /* Centra los links */
-  gap: 2rem;
-  padding: 0;
-  margin: 0; /* Sin margen */
+  gap: 1.5rem;
   list-style: none;
-  width: auto; /* No ocupe todo el ancho para no estirar los links */
+  padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
 .nav__item a {
   text-decoration: none;
-  color: inherit;
-   font-size: 1rem; 
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
 }
+
 
 @media (min-width: 768px) {
   .page__header {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 0.80rem 1.5rem; /* un poco más de aire en laterales */
+    height: 90px; 
+    padding: 0 1.5rem;
   }
 
-  /* El contenedor del nav debe ocupar solo lo necesario */
-  .header__nav-container {
-    width: auto;
-  }
-   .header__logo img {
-    max-width: 180px;
+  .header__logo img {
+    width: 140px;
   }
 }
+
+
 @media (min-width: 1024px) {
-   .header__logo img {
-    max-width: 200px;
+  .header__logo img {
+    width: 160px;
   }
 
   .nav__list {
-    gap: 2.5rem; /* mayor separación entre links */
+    gap: 2rem;
   }
 }
 

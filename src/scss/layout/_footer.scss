@@ -4,7 +4,7 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100vw;               // Siempre ocupa todo el ancho
+  width: 100%; 
   padding: 1.5rem;
   background-color: black;
   color: vars.$color-secondary;
@@ -15,15 +15,14 @@
 
 @media (min-width: 768px) {
   .page__footer {
-    padding: 1rem 3rem;       // Más espacio lateral en tablet
-    font-size: 1.4rem;        // Texto más grande
+    padding: 1rem 3rem;  
+    font-size: 1.4rem;
   }
 }
 
 @media (min-width: 1024px) {
   .page__footer {
-    padding: 1rem 5rem;       // Aún más espacio lateral en desktop
-    font-size: 1.4rem;        // Texto más grande para desktop
+    padding: 1rem 5rem;  
+    font-size: 1.4rem;
   }
 }
-
