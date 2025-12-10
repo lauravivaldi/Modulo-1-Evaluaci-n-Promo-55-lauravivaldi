@@ -1,11 +1,29 @@
 @use '../core/variables' as vars;
 
 .page__footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    padding: 1rem;
-    color: vars.$color-secondary;
-    text-align: center;  
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;               // Siempre ocupa todo el ancho
+  padding: 1.5rem;
+  background-color: black;
+  color: vars.$color-secondary;
+  text-align: center;
+  font-size: 1.2rem;
+  z-index: 10;
 }
+
+@media (min-width: 768px) {
+  .page__footer {
+    padding: 1rem 3rem;       // Más espacio lateral en tablet
+    font-size: 1.4rem;        // Texto más grande
+  }
+}
+
+@media (min-width: 1024px) {
+  .page__footer {
+    padding: 1rem 5rem;       // Aún más espacio lateral en desktop
+    font-size: 1.6rem;        // Texto más grande para desktop
+  }
+}
+

@@ -5,7 +5,6 @@
   width: 100vw;
   background-color: white;
   z-index: 100;
-
   display: flex;
   flex-direction: column;
   align-items: center; /* centra horizontalmente */
@@ -22,7 +21,6 @@
   margin: 0 auto; /* centra la imagen */
 }
 
-
 .nav__list {
   display: flex;
   justify-content: center; /* Centra los links */
@@ -38,16 +36,27 @@
   color: inherit;
 }
 
-.page__header {
-  background-color: #eee; /* para ver el contenedor */
-}
+@media (min-width: 768px) {
+  .page__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; /* un poco más de aire en laterales */
+  }
 
-.header__nav-container {
-  background-color: #cfc; /* para ver el nav */
+  /* El contenedor del nav debe ocupar solo lo necesario */
+  .header__nav-container {
+    width: auto;
+  }
 }
+@media (min-width: 1024px) {
+  .header__logo img {
+    max-width: 190px;   /* un poco más grande si tu diseño lo pide */
+  }
 
-.nav__list {
-  background-color: #fcc; /* para ver el ul */
+  .nav__list {
+    gap: 2.5rem; /* mayor separación entre links */
+  }
 }
 
 
