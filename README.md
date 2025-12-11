@@ -16,26 +16,26 @@ Logo de Adalab
 Imagen del hero
 La tipografía es Rubik, accesible en Google Fonts.
 
-###Maquetación
+### Maquetación
 En primer lugar vamos a realizar la maquetación sobre un diseño dado.
 . La cabecera (logo y menú) debe permanecer siempre fijo en la pantalla al hacer scroll.
 . El bloque principal (Creando diversidad digital) debe medir lo mismo que el alto de la pantalla.
 . El footer (copyright) debe permanecer siempre fijo en la pantalla al hacer scroll.
 . Es un diseño responsive con 2 breakpoints (móvil, tablet y desktop).
 
-###Interacción
+### Interacción
 En total, tenemos 2 interacciones que resolver:
 . El logo de Adalab enlaza a la web de Adalab (http://adalab.es).
 . Los enlaces del menú apuntan al blog de Adalab y a la página de contacto de Adalab.
 
-###Entrega
+### Entrega
 La evaluación solo se considerará terminada cuando:
 Esté publicada en GitHub Pages y esté funcionando, para lo cual tendréis que subir el código,
 también a la carpeta docs/ del repositorio.
 El enlace a GitHub Pages esté en la página página principal del repositorio, en la parte superior, al
 lado de la descripción.
 
-###Criterios de evaluación
+### Criterios de evaluación
 Vamos a listar los criterios de evaluación de este ejercicio. Si superas más del 80% de los criterios, estás
 aprendiendo al ritmo que hemos pautado para poder afrontar los conocimientos del siguiente módulo.
 General
